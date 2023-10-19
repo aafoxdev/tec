@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./img/common/favicon.ico">
+  <title>Ubuntuでサーバー構築</title>
+  <meta name="description" content="はじめに">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!--共通CSS-->
+  <link href="./css/load.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/prism.css">
+  <link href="./css/common.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/bg-move.css">
+  <link rel="stylesheet" type="text/css" href="./css/wave.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <!--共通JS-->
+  <script src="./js/load.js"></script>
+  <script src="./js/prism.js"></script>
+  <script src="./js/toggle-menu.js"></script>
+  
+  <!--選択CSS-->
+  <link href="./css/tec.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- ロード要素 -->
+<div id="loading">
+ <div class="spinner"></div>
+ <p><font color="#FFFFFF">Now Loading</font></p>
+</div>
+<div id="particles-js"></div>
+<div id="wrapper">
+ <!-- headerここから -->
+ <header class="header">
+  <div class="header-inner">
+      <a class="header-logo" href="../">
+          <img src="./img/common/logo.png" alt="athenai">
+      </a>
+      <button class="toggle-menu-button"></button>
+      <div class="header-site-menu">
+          <nav class="site-menu">
+              <ul>
+                <li><a href="../index.html">ホーム</a></li>
+                <li><a href="../#area2">アート</a></li>
+                <li><a href="../#area3">お話箱</a></li>
+                <li><a href="./index.html">技術系</a></li>
+                <li><a href="../#area5">その他</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+</header>
+<!-- headerここまで -->
+<main class="main">
+  <div class="title">
+      <h1>Ubuntuでサーバー構築</h1>
+      <p>はじめに</p>
+  </div>
+  
+  <div class="content">
+      
+      <!--ここからが記事内容-->
+      <dl class="content-area">
+       
+        <h2>はじめに</h2>
+        <div class="content-text"> 
+          最新のUbuntu22.04LTSを使ってWEBサーバーを構築してみましょう。本ページは次のような人に向いています。
+          <ul>
+            <li>WEBサーバーってどうやって組み立てるのか知りたい</li>
+            <li>Unix,Linuxで使うCUIになれてみたい</li>
+            <li>セキュリティのため、オンプレミス環境を作りたい</li>
+            <li>WEBアプリは作れるけど、ITインフラについては分からない</li>
+        </ul>
+        ご安心してください。本ページでは、WEBサーバー開設までに必要なステップを詳しく説明した結果、簡単にWEBサーバー
+        を組み立てられるようになってます(個人差があります)。ただし、実践に重点を置いた結果、公開鍵認証の仕組みといった
+        理論面に関する記述は省略しています。そのため、この用語が分からないといったことがあれば、各自で調べて頂けると、
+        より理解が深まると思います。
+        </div>
+        <h2>準備物</h2>
+        <div class="content-text">
+          本サイトで想定している準備物は次の通りです。
+          <ul>
+              <li>サーバー用のパソコン</li>
+              <li>WindowsOSのパソコン</li>
+              <li>USBメモリ</li>
+              <li>Wifiルーター</li>
+              <li>熱意</li>
+          </ul>
+          サーバー用のパソコンに関してですが、本サイトでは初期化して利用することを想定していますので、64bitCPUが掲載された
+          普通の市販されているパソコンで問題ないと思います。また、熱意という項目は冗談ではなく、かなり本気で必要だと感じています。
+          というのも、機械学習用のGPUを使った構築をやったことがある人なら分かると思いますが、情報系のシステムは手順やバージョンを間違えると、
+          あの時は動いたのにいきなりエラーがでて動かないということは頻繁に起こります。ですから、熱意を侮らないでください。
+        </div>
+        <h2>おわりに</h2>
+        <div class="content-text"> 
+          次はOSをインストールします。
+        </div>
+         <!--次ページへのリンク-->
+      
+      </dl>
+      <div class="sp-br">
+        <div class="link-button">
+         <a class="link" href="./install.html">OSインストール編</a>
+       </div>
+       </div>
+
+      <aside class="content-menu">
+          <div class="content-menu-inner">
+              <h2>CONTENT LIST</h2>
+              <ul>
+                  <li><a href="./index.html"><font color="#ff6347">はじめに</font></a></li>
+                  <li><a href="./install.html">OSインストール編</a></li>
+                  <li><a href="./ipconfig.html">IPアドレスの固定編</a></li>
+                  <li><a href="./ssh.html">SSHの設定編</a></li>
+                  <li><a href="./firewall.html">ファイヤウォール編</a></li>
+                  <li><a href="./port-fowarding.html">ポートフォワーディング編</a></li>
+                  <li><a href="./domain.html">無料のドメイン取得編</a></li>
+                  <li><a href="./apache.html">Apacheの設定編</a></li>
+                  <li><a href="./vit.html">バーチャルホスト編</a></li>
+                  <li><a href="./https.html">HTTPS編</a></li>
+                  <li><a href="./sql-php.html">MySQL,PHP編</a></li>
+              </ul>
+              <h2>OTHER LIST</h2>
+              <ul>
+                  <li><a href="./server.html">Ubuntu Server編</a></li>
+                  <li><a href="./stec001.html">小技編</a></li>
+              </ul>
+          </div>
+      </aside>
+  </div>
+   <!--次ページへのリンク-->
+   <div class="pc-br">
+   <div class="link-button">
+    <a class="link" href="./install.html">OSインストール編</a>
+  </div>
+  </div>
+  <!--記事内容終了-->
+  </div>
+     
+</main>
+<!-- footerここから -->
+<div class="footer_top_img"><img src="./img/common/footer-top.jpg" width="100%" alt=""></div>
+<footer class="footer">
+  <nav class="site-menu">
+      <ul>
+        <li><a href="../index.html">ホーム</a></li>
+        <li><a href="../#area2">アート</a></li>
+        <li><a href="../#area3">お話箱</a></li>
+        <li><a href="./index.html">技術系</a></li>
+        <li><a href="../#area5">その他</a></li>
+      </ul>
+  </nav>
+  <a class="footer-logo" href="../index.html">
+      <img src="./img/common/logo.png" alt="athenai">
+  </a>
+  <p class="copyright"><small>&copy;athenai2020</small></p>
+</footer>
+<!-- footerここまで -->
+<!--/wrapper--></div>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="./js/bg-move.js"></script>
+</body>
+</html>
